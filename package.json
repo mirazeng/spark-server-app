@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "spark-server-app",
+  "version": "1.0.0",
+  "description": "Node.js web server of Sparks",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirazeng/spark-server-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirazeng/spark-server-app/issues"
+  },
+  "homepage": "https://github.com/mirazeng/spark-server-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "node": "^18.20.4",
+    "nodemon": "^3.1.4"
+  }
+}
