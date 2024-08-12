@@ -15,18 +15,15 @@ const userSchema = new mongoose.Schema({
     password: {type: String, required: true},
     email: String,
     phone: String,
-    dob: Date,
-    // database currently does not have roles to assign to different users.
+    dob: Date, // database currently does not have roles to assign to different users.
     role: {
         type: String, enum: ["VIP", "INFLUENCER", "ADMIN", "USER"], default: "USER",
     },
     followers: {
-        type: [followerSchema],
-        default: []
+        type: [followerSchema], default: []
     },
     following: {
-        type: [followingSchema],
-        default: []
+        type: [followingSchema], default: []
     },
 }, {collection: "users"});
 
