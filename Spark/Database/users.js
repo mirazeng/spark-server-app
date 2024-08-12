@@ -11,6 +11,7 @@ export default [
         "phone": "(961) 1214999",
         "dob": "05/07/1979",
         "password": "7532",
+        "role": "USER",
         "followers": [{
             "name": "rbridel1"
         }, {
@@ -36,6 +37,7 @@ export default [
         "phone": "(694) 5411641",
         "dob": "01/31/1991",
         "password": "1984",
+        "role": "USER",
         "followers": [{
             "name": "alarner0"
         }, {
@@ -61,6 +63,7 @@ export default [
         "phone": "(681) 9345486",
         "dob": "08/16/1996",
         "password": "3629",
+        "role": "USER",
         "followers": [{
             "name": "alarner0"
         }, {
@@ -86,6 +89,7 @@ export default [
         "phone": "(737) 6547730",
         "dob": "03/13/2009",
         "password": "9015",
+        "role": "USER",
         "followers": [{
             "name": "alarner0"
         }, {
@@ -111,6 +115,7 @@ export default [
         "phone": "(315) 7138850",
         "dob": "07/11/1980",
         "password": "5278",
+        "role": "USER",
         "followers": [{
             "name": "cdowda2"
         }, {
@@ -136,6 +141,7 @@ export default [
         "phone": "(873) 4187060",
         "dob": "03/30/2010",
         "password": "4703",
+        "role": "USER",
         "followers": [{
             "name": "rbridel1"
         }, {
@@ -161,6 +167,7 @@ export default [
         "phone": "(683) 9715227",
         "dob": "01/09/1967",
         "password": "1356",
+        "role": "USER",
         "followers": [{
             "name": "rbridel1"
         }, {
@@ -182,6 +189,7 @@ export default [
         "phone": "(855) 5392388",
         "dob": "01/19/1960",
         "password": "8902",
+        "role": "USER",
         "followers": [{
             "name": "dkob6"
         }, {
@@ -207,6 +215,7 @@ export default [
         "phone": "(540) 8249797",
         "dob": "04/27/1962",
         "password": "6741",
+        "role": "USER",
         "followers": [{
             "name": "dkob6"
         }, {
@@ -230,6 +239,7 @@ export default [
         "phone": "(909) 6370720",
         "dob": "06/24/1993",
         "password": "2390",
+        "role": "USER",
         "followers": [{
             "name": "dbulleyn7"
         }, {
@@ -257,6 +267,7 @@ export default [
         "phone": "(151) 4647889",
         "dob": "12/29/1984",
         "password": "5817",
+        "role": "USER",
         "followers": [{
             "name": "dbulleyn7"
         }, {
@@ -282,6 +293,7 @@ export default [
         "phone": "(641) 1287592",
         "dob": "10/15/2017",
         "password": "3024",
+        "role": "USER",
         "followers": [{
             "name": "dbulleyn7"
         }, {
@@ -307,6 +319,7 @@ export default [
         "phone": "(246) 8044664",
         "dob": "07/27/2000",
         "password": "7193",
+        "role": "USER",
         "followers": [{
             "name": "mstedell9"
         }, {
@@ -332,6 +345,7 @@ export default [
         "phone": "(138) 6563628",
         "dob": "07/13/2021",
         "password": "9458",
+        "role": "USER",
         "followers": [{
             "name": "jaccombb"
         }, {
@@ -357,6 +371,7 @@ export default [
         "phone": "(153) 9055322",
         "dob": "03/28/1964",
         "password": "6270",
+        "role": "USER",
         "followers": [{
             "name": "lerbc"
         }, {
@@ -382,6 +397,7 @@ export default [
         "phone": "(805) 7869275",
         "dob": "09/28/2019",
         "password": "1835",
+        "role": "USER",
         "followers": [{
             "name": "kbusd"
         }, {
@@ -407,6 +423,53 @@ export default [
         "phone": "(306) 5609562",
         "dob": "05/04/1985",
         "password": "4096",
+        "role": "USER",
+        "followers": [{
+            "name": "kbusd"
+        }, {
+            "name": "msartaine"
+        }, {
+            "name": "gstitcherf"
+        }, {
+            "name": "egadeauxh"
+        }],
+        "following": [{
+            "name": "gstitcherf"
+        }]
+    }, {
+        "username": "admin",
+        "first_name": "Big",
+        "last_name": "Boss",
+        "gender": "Male",
+        "email": "admin@spark.com",
+        "phone": "REDACTED",
+        "dob": "01/01/1999",
+        "password": "admin",
+        "role": "ADMIN",
+        "followers": [{
+            "name": "admin"
+        }, {
+            "name": "kbusd"
+        }, {
+            "name": "msartaine"
+        }, {
+            "name": "gstitcherf"
+        }, {
+            "name": "egadeauxh"
+        }],
+        "following": [{
+            "name": "gstitcherf"
+        }]
+    }, {
+        "username": "vip",
+        "first_name": "Much",
+        "last_name": "Doge",
+        "gender": "Female",
+        "email": "vipdoge@spark.com",
+        "phone": "none",
+        "dob": "01/01/1999",
+        "password": "vip",
+        "role": "VIP",
         "followers": [{
             "name": "kbusd"
         }, {
