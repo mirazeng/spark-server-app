@@ -7,7 +7,7 @@ const foodRecipeSchema = new mongoose.Schema({
     imagePath: {type: String, required: true},
     instructions: [{type: String, required: true}],
     creator: {
-        type: [String], default: []
+        type: String, default: "admin"
     },
     likes: {
         type: Number, default: 0
@@ -19,7 +19,7 @@ const foodRecipeSchema = new mongoose.Schema({
         type: Date, default: Date.now
     }
 }, {
-    collection: "foodRecipes"
+    collection: "RecipeDetail"
 });
 
 export default foodRecipeSchema;

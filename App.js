@@ -4,6 +4,8 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import session from "express-session";
 import UserRoutes from "./Users/routes.js";
+import RecipeDetailRoutes from "./RecipeDetail/routes.js";
+import RemoteRecipeRoutes from "./RemoteRecipe/routes.js";
 
 
 const app = express();
@@ -39,4 +41,6 @@ app.use(session(sessionOptions));
 app.use(express.json());
 const port = process.env.PORT || 4000;
 UserRoutes(app);
+RecipeDetailRoutes(app);
+RemoteRecipeRoutes(app);
 app.listen(port);

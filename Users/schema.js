@@ -1,30 +1,21 @@
 import mongoose from 'mongoose';
 
-const followerSchema = new mongoose.Schema({
-    username: String,
-}, {collection: "followers"});
-
-const followingSchema = new mongoose.Schema({
-    username: String,
-}, {collection: "following"});
-
 const userSchema = new mongoose.Schema({
     username: {type: String, required: true, unique: true},
-    firstName: String,
-    lastName: String,
+    first_name: {type: String, default: "DefaultFirstName"},
+    last_name: {type: String, default: "DefaultLastName"},
     password: {type: String, required: true},
-    email: String,
-    phone: String,
-    dob: Date, // database currently does not have roles to assign to different users.
+    email: {type: String, default: "mail@spark.com"},
+    phone: {type: String, default: "1234567890"},
+    dob: {type: Date, default: Date.now},
     role: {
         type: String, enum: ["VIP", "INFLUENCER", "ADMIN", "USER"], default: "USER",
     },
-    followers: {
-        type: [followerSchema], default: []
-    },
-    following: {
-        type: [followingSchema], default: []
-    },
+    gender: {type: String, default: "Other"},
+    description: {type: String, default: "This is a description"},
+    profilePicture: {type: String, default: "/headicon.png"},
+    followers: [String],
+    following: [String],
 }, {collection: "users"});
 
 export default userSchema;
